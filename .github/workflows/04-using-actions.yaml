@@ -1,11 +1,11 @@
 name: 04 - using-actions
 
-on: push
+on: workflow_run
 
 jobs: 
   build:
     runs-on: ubuntu-latest
-    
+
     defaults:
       run:
         working-directory: 04-using-actions/react-app
@@ -22,7 +22,7 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: Run Unit tests
-        run: npm run tests
+        run: npm run test
 
         
         # 0. Checkout the code from the repository

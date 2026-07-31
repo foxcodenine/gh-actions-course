@@ -116,3 +116,6 @@ database.yml
 *.tfstate
 *.tfstate.backup
 .terraform.lock.hcl
+
+
+.vscode
